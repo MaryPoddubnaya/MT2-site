@@ -1,0 +1,38 @@
+.header {
+  flex: 1 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: @header-height;
+  background: rgba(255, 255, 255, .2);
+}
+
+.flex-logo {
+  width: 20%;
+  height: @header-height;
+  align-self: flex-end;
+  color: white;
+  line-height: @header-height;
+}
+
+.flex-nav {
+  width: 50%;
+  height: @header-height;
+  align-items: center;
+}
+
+.flex-item-list {
+  width: 20%;
+  height: 100%;
+  text-align: center;
+
+  a {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    line-height: @header-height;
+    text-transform: capitalize;
+  }
+}
