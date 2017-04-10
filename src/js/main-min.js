@@ -1,0 +1,1 @@
+$(document).ready(function(){function e(){return window.pageYOffset||document.documentElement.scrollTop}$(window).scroll(function(){e()>=300?$(".header").addClass("shrink"):$(".header").removeClass("shrink")})});

@@ -7,6 +7,30 @@
   width: 100%;
   height: @header-height;
   background: rgba(255, 255, 255, .2);
+  box-shadow: 1px 1px 14px 1px #eca151;
+  .easeanimation();
+
+  &.shrink {
+    height: @header-small-height;
+    line-height: 52px;
+    background: @soft-orange;
+
+    .flex-logo {
+      height: @header-small-height;
+      line-height: 60px;
+    }
+
+    .flex-nav {
+      height: @header-small-height;
+
+      .flex-item-list {
+        a {
+          height: @header-small-height;
+          line-height: 60px;
+        }
+      }
+    }
+  }
 }
 
 .flex-logo {
@@ -15,6 +39,7 @@
   align-self: flex-end;
   color: white;
   line-height: @header-height;
+  .easeanimation();
 }
 
 .flex-nav {
@@ -34,5 +59,12 @@
     width: 100%;
     line-height: @header-height;
     text-transform: capitalize;
+    .easeanimation();
+
+    &:hover {
+      u {
+        text-decoration: underline;
+      }
+    }
   }
 }

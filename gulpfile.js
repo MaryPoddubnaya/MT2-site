@@ -35,7 +35,7 @@ gulp.task('watch', function() {
 gulp.task('compress-js', function() {
     gulp.src('dev/js/*.js')
         .pipe(minify({noSource: true}))
-        .pipe(gulp.dest('js/'))
+        .pipe(gulp.dest('src/js'))
 });
 
 gulp.task('default', ['less', 'compress-js', 'watch' ], function() {
