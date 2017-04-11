@@ -1,3 +1,24 @@
 .easeanimation(@param:all, @speed: 0.32s, @delay: 0s) {
   transition: @param @speed @delay ease-in-out;
 }
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+
+  50% {
+    opacity: .5;
+  }
+
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.fadeInUp {
+  animation: fadeInUp 1.5s .5s;
+  animation-fill-mode: forwards;
+}

@@ -5,27 +5,48 @@
 }
 
 .heading-block {
-  width: 100%;
+  max-width: 100%;
   text-align: center;
   padding: 200px 30px 200px;
   color: white;
+  margin: 0 auto;
+
+  @media @screen-sm-max {
+    padding: 100px 0;
+  }
 
   .heading {
     font-size: @font-size-h1;
     text-transform: uppercase;
     font-weight: 300;
+
+    @media @screen-sm-max {
+      font-size: @font-size-h1-small;
+    }
+
+    @media @screen-xs-max {
+      font-size: @font-size-h2;
+    }
   }
 
   .subheading {
     font-family: @font-family-subtitle;
     font-size: @font-size-h1;
+
+    @media @screen-sm-max {
+      font-size: @font-size-h1-small;
+    }
+
+    @media @screen-xs-max {
+      font-size: @font-size-h2;
+    }
   }
 }
 
 /* info-section */
 .info-section {
-  padding-top: 100px;
   text-align: center;
+  position: relative;
 }
 
 .about-section {
@@ -39,7 +60,6 @@
     text-align: center;
   }
 }
-
 
 /* subscribe-section */
 .subscribe-section {
