@@ -13,6 +13,10 @@ body {
   background: white;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 a,
 a:hover,
 a:focus,
@@ -53,8 +57,8 @@ strong {
 }
 
 .container {
-  width: 90%;
   margin: 0 auto;
+  padding: 0 15px;
 
   @media @screen-sm-min {
    width: 720px;
@@ -70,8 +74,6 @@ strong {
 }
 
 .area-container {
-  display: block;
-
   @media @screen-sm-min {
     display: flex;
     flex-direction: row;
@@ -84,7 +86,7 @@ strong {
   padding: 70px 0;
 }
 
-.flex-container {
+.flex-container-inline {
   display: block;
 
   @media @screen-sm-min {
@@ -108,7 +110,6 @@ strong {
 .flex-item-img {
   width: 100%;
   text-align: center;
-  margin-bottom: 30px;
 
   @media @screen-sm-min{
     width: 38%;
@@ -223,7 +224,6 @@ strong {
     }
 
   .form-subscribe {
-   /* width: 33.333%;*/
     font-size: 16px;
     color: white;
     padding: 10px 30px;
@@ -235,11 +235,8 @@ strong {
     cursor: pointer;
 
     @media @screen-md-max {
-      position: absolute;
       width: 100%;
       max-height: 60px;
-      bottom: -50px;
-      left: 0;
     }
   }
 }
@@ -280,8 +277,8 @@ strong {
   height: 160px;
   background: #575451;
   border-radius: 50%;
-  .fadeInUp;
   opacity: 0;
+  .animation-fade();
 
   &:before {
     content: '';
@@ -295,6 +292,7 @@ strong {
   }
 
   &.icon-crown {
+    .animation-fade(@animation-delay: .9s);
     &:before {
       width: 86px;
       background: url("../images/svg-2.png") no-repeat;
@@ -302,6 +300,7 @@ strong {
   }
 
   &.icon-letter {
+    .animation-fade(@animation-delay: 1.3s);
     &:before {
       width: 86px;
       height: 83px;
@@ -318,5 +317,7 @@ strong {
   height: 6px;
   width: 80%;
   background: #575451;
+  opacity: 0;
+  .animation-fade(@animation-delay: 1.7s);
 }
 
