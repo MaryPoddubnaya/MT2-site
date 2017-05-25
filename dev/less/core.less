@@ -155,7 +155,7 @@ strong {
   }
 }
 
-.flex-item {
+.flex-col {
   max-width: 100%;
   margin-bottom: 30px;
 
@@ -177,7 +177,7 @@ strong {
 }
 
 .flex-row {
-  .flex-item {
+  .flex-col {
     @media only screen and (max-device-width: 768px) and (orientation: portrait) {
       padding: 0 20px;
       width: 100%;
@@ -185,7 +185,7 @@ strong {
   }
 }
 
-.flex-item-small {
+.flex-col-small {
   width: 100%;
 
   @media @screen-sm-min{
@@ -213,7 +213,7 @@ strong {
   }
 }
 
-.flex-item-wide {
+.flex-col-wide {
   text-align: left;
   width: 58%;
 
@@ -375,7 +375,7 @@ strong {
     display: inline-block;
   }
 
-  .flex-item {
+  .flex-col {
     @media only screen and (max-device-width: 768px) and (orientation: portrait) {
       width: 30%;
     }
