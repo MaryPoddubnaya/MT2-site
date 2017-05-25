@@ -5,37 +5,34 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MT2-site</title>
-
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700,700i" rel="stylesheet">
-
+    <!-- Libs -->
     <script src="libs/jquery/jquery.min.js"></script>
     <!-- Js -->
     <script src="src/js/main-min.js"></script>
-
     <!-- Styles -->
     <link rel="stylesheet" href="src/reset.min.css" type="text/css">
     <link rel="stylesheet" href="src/main.min.css" type="text/css">
 </head>
 <body>
 <header class="header">
-    <div class="container header-container clearfix">
-        <a href="#" class="flex-logo flex-item">Logo</a>
-        <a href="#" class="nav-link">
-            <svg class="icon-menu" role="img" version="1.1" id="icon-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 35 34" style="enable-background:new 0 0 35 34;" xml:space="preserve">
+    <div class="container">
+        <nav class="header-container area-container clearfix">
+            <a href="#" class="nav-link">
+                <svg class="icon-menu" role="img" version="1.1" id="icon-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 35 34" style="enable-background:new 0 0 35 34;" xml:space="preserve">
 <path d="M9,25h17v-2H9V25z M26,9H9v2h17V9z M26,16H9v2h17V16z"></path>
 </svg>
-        </a>
+            </a>
 
-        <ul class="flex-container-inline flex-nav">
-            <li class="flex-item flex-item-list"><a href="#home-section"><u>Home</u></a></li>
-            <li class="flex-item flex-item-list"><a href="#info-section"><u>Services</u></a></li>
-            <li class="flex-item flex-item-list"><a href="#about-section"><u>About us</u></a></li>
-            <li class="flex-item flex-item-list"><a href="#our-clients-section"><u>Blog</u></a></li>
-            <li class="flex-item flex-item-list"><a href="#"><u>Contact us</u></a></li>
-        </ul>
-
-
+            <ul class="flex-container-inline flex-nav">
+                <li class="flex-item flex-item-list"><a href="#home-section"><u>Home</u></a></li>
+                <li class="flex-item flex-item-list"><a href="#info-section"><u>Services</u></a></li>
+                <li class="flex-item flex-item-list"><a href="#about-section"><u>About us</u></a></li>
+                <li class="flex-item flex-item-list"><a href="#our-clients-section"><u>Blog</u></a></li>
+                <li class="flex-item flex-item-list"><a href="#"><u>Contact us</u></a></li>
+            </ul>
+        </nav>
     </div>
 </header>
 
@@ -49,26 +46,26 @@
 </section>
 
 <section class="section info-section" id="info-section">
-        <ul class="icon-block container area-container">
+        <ul class="container area-container icon-block">
             <li class="hr-line"></li>
-            <li class="flex-item-small"><i class="icon-item icon-pen"></i></li>
-            <li class="flex-item-small"><i class="icon-item icon-crown"></i></li>
-            <li class="flex-item-small"><i class="icon-item icon-letter"></i></li>
+            <li class="flex-item"><i class="icon-item icon-pen"></i></li>
+            <li class="flex-item"><i class="icon-item icon-crown"></i></li>
+            <li class="flex-item"><i class="icon-item icon-letter"></i></li>
         </ul>
-    <div class="container area-container">
-        <div class="flex-item-small">
+    <div class="container area-container flex-row">
+        <div class="flex-item">
             <h3 class="sub-caption">Duis Aute Irure</h3>
             <p>Duis aute irure dolor in reprehenderit
                 in voluptate velit esse cillum dolore eu
                 fugiat nulla pariatur Excepteur.</p>
         </div>
-        <div class="flex-item-small">
+        <div class="flex-item">
             <h3 class="sub-caption">Duis Aute Irure</h3>
             <p>Duis aute irure dolor in reprehenderit
                 in voluptate velit esse cillum dolore eu
                 fugiat nulla pariatur Excepteur.</p>
         </div>
-        <div class="flex-item-small">
+        <div class="flex-item">
             <h3 class="sub-caption">Duis Aute Irure</h3>
             <p>Duis aute irure dolor in reprehenderit
                 in voluptate velit esse cillum dolore eu
@@ -79,10 +76,10 @@
 
 <section class="section about-section" id="about-section">
     <div class="container area-container">
-        <div class="flex-item-img">
+        <div class="flex-item flex-item-small">
             <img src="images/browser-image.png" alt="">
         </div>
-        <div class="flex-item-text-block">
+        <div class="flex-item flex-item-wide">
             <h2 class="caption">We Design Beautiful Templates</h2>
             <p>
                 Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore euna
@@ -98,17 +95,17 @@
     <div class="container">
         <h2 class="caption">Our Happy Clients</h2>
         <div class="area-container">
-            <div class="flex-item-small bg-block">
+            <div class="flex-item bg-block">
                 <p>Fenim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
                 <p><strong>&#64;Jane Doe</strong></p>
             </div>
-            <div class="flex-item-small bg-block">
+            <div class="flex-item bg-block">
                 <p>Fenim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
                 <p><strong>&#64;Jane Doe</strong></p>
             </div>
-            <div class="flex-item-small bg-block">
+            <div class="flex-item bg-block">
                 <p>Fenim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
                 <p><strong>&#64;Jane Doe</strong></p>
@@ -119,14 +116,11 @@
 
 <section class="section subscribe-section" id="subscribe-section">
     <div class="container area-container">
-        <div class="flex-item-img">
-            <h2 class="caption">
-                subscribe to our
-                newsletter
-            </h2>
+        <div class="flex-item flex-item-small">
+            <h2 class="caption">Subscribe to&nbsp;our newsletter</h2>
         </div>
-        <div class="flex-item-text-block">
-            <form action="#" method="post" class="form-holder area-container">
+        <div class="flex-item flex-item-wide">
+            <form action="#" method="post" class="form-holder area-container clearfix">
                 <input type="text" name="name" placeholder="name" class="form-control name-control">
                 <input type="email" name="email" placeholder="email" class="form-control">
                 <input type="button" value="subscribe" class="form-subscribe">

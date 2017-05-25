@@ -1,3 +1,12 @@
+.section {
+  flex: 1 100%;
+  padding: 50px 0;
+
+  @media @screen-sm-min {
+    padding: 70px 0;
+  }
+}
+
 /* home-section */
 .home-section {
   padding-top: 100px;
@@ -7,39 +16,12 @@
 .heading-block {
   max-width: 100%;
   text-align: center;
-  padding: 200px 30px 200px;
+  padding: 150px 30px 150px;
   color: white;
   margin: 0 auto;
 
   @media @screen-sm-max {
-    padding: 100px 0;
-  }
-
-  .heading {
-    font-size: @font-size-h1;
-    text-transform: uppercase;
-    font-weight: 300;
-
-    @media @screen-sm-max {
-      font-size: @font-size-h1-small;
-    }
-
-    @media @screen-xs-max {
-      font-size: @font-size-h2;
-    }
-  }
-
-  .subheading {
-    font-family: @font-family-subtitle;
-    font-size: @font-size-h1;
-
-    @media @screen-sm-max {
-      font-size: @font-size-h1-small;
-    }
-
-    @media @screen-xs-max {
-      font-size: @font-size-h2;
-    }
+    padding: 60px 0;
   }
 }
 
@@ -49,12 +31,28 @@
   position: relative;
 }
 
+/* About section */
 .about-section {
   background: @light-grey;
 }
 
+/* Our client section */
 .our-clients-section {
-  padding-bottom: 100px;
+  .area-container {
+    @media only screen and (max-device-width: 768px) and (orientation: portrait) {
+      text-align: left;
+    }
+
+    .flex-item{
+      @media only screen and (max-device-width: 768px) and (orientation: portrait) {
+        margin-bottom: 30px;
+      }
+
+      @media only screen and (max-device-width: 1024px) and (orientation: landscape) {
+        text-align: left;
+      }
+    }
+  }
 
   .caption {
     text-align: center;
@@ -68,13 +66,16 @@
   .caption {
     color: white;
 
+    @media only screen and (max-device-width: 768px) and (orientation: portrait) {
+      text-align: center;
+    }
 
     @media @screen-md-min {
       margin-bottom: 0;
     }
   }
 
-  .flex-item-text-block {
+  .flex-item-wide {
     align-self: center;
     padding-top: 0;
   }
