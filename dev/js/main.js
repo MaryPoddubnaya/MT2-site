@@ -21,19 +21,13 @@ $(document).ready(function() {
         }
     });
 
-    // Get the height of the header
-    var headerHeight = $("header").height();
-
-    $(".flex-nav .flex-item-list").find("a").bind("click", function(e) {
+    // scroll to sections
+    $(".flex-nav li").find("a").click(function(e) {
         e.preventDefault();
-        var target = $(this).attr("href");
-        var scrollToPosition = $(target).offset().top - headerHeight;
-
-        $("html, body").animate({ 'scrollTop': scrollToPosition }, 900, function(){
-            window.location.hash = "" + target;
-            $("html, body").animate({ 'scrollTop': scrollToPosition }, 0);
+        var section = $(this).attr("href");
+        $("html, body").animate({
+            scrollTop: $(section).offset().top
         });
-
     });
 });
 
